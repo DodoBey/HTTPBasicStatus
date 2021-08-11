@@ -1,0 +1,19 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Basic Dashboard with Express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Dashboard",
+    "status",
+    "app",
+    "express",
+    "node"
+  ],
+  "author": "Dodo",
+  "license": "ISC"
+}
