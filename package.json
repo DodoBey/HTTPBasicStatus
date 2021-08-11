@@ -15,5 +15,8 @@
     "node"
   ],
   "author": "Dodo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "check-disk-space": "^3.0.1"
+  }
 }

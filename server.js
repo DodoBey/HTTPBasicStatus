@@ -1,6 +1,13 @@
 var http = require('http');
 var os = require('os');
-var process = require('process')
+var process = require('process');
+var checkDiskSpace = require('check-disk-space').default;
+
+let disk = []
+checkDiskSpace('C:/').then((diskSpace) => {
+    disk = diskSpace
+})
+
 
 
 http.createServer(function (req, res){
@@ -35,6 +42,9 @@ http.createServer(function (req, res){
             break;
         case '/api/version':
             res.write(process.version);
+            break;
+        case '/api/hdd':
+            res.write(JSON.stringify(disk))
             break;
         default :
             res.write('Please enter the url that you want to go')
