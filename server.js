@@ -43,7 +43,7 @@ http.createServer(function (req, res){
         case '/api/version':
             res.write(process.version);
             break;
-        case '/api/hdd':
+        case '/api/diskspace':
             res.write(JSON.stringify(disk))
             break;
         default :
